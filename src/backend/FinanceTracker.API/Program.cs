@@ -1,9 +1,16 @@
+using FinanceTracker.API.Extensions;
 using FinanceTracker.Application.Extensions;
 using FinanceTracker.Infrastructure.Extensions;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
+builder.Services.AddValidators();
+
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDataAccess(builder.Configuration);
