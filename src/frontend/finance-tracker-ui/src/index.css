@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@source "../index.html";
+@source "./**/*.{js,ts,jsx,tsx}";
+
+@theme {
+    --color-cream: #FFFBEA;
+    --color-light-yellow: #F8EDC4;
+    --color-rich-orange: #FFA412;
+    --color-text-brown: #772121;
+    --color-text-income-green: #387820;
+    --color-text-expense-red: #BC3333;
+}

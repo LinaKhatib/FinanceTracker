@@ -521,3 +521,58 @@ docker-compose.override.yml
 *.orig
 *.old
 
+# Logs
+src/frontend/finance-tracker-ui/logs/
+src/frontend/finance-tracker-ui/*.log
+src/frontend/finance-tracker-ui/npm-debug.log*
+src/frontend/finance-tracker-ui/yarn-debug.log*
+src/frontend/finance-tracker-ui/yarn-error.log*
+src/frontend/finance-tracker-ui/pnpm-debug.log*
+src/frontend/finance-tracker-ui/lerna-debug.log*
+
+# Dependencies
+src/frontend/finance-tracker-ui/node_modules/
+
+# Build outputs
+src/frontend/finance-tracker-ui/dist/
+src/frontend/finance-tracker-ui/dist-ssr/
+
+# Local files
+src/frontend/finance-tracker-ui/*.local
+
+# Environment variables
+src/frontend/finance-tracker-ui/.env
+src/frontend/finance-tracker-ui/.env.local
+
+# Editor directories and files
+src/frontend/finance-tracker-ui/.vscode/*
+!src/frontend/finance-tracker-ui/.vscode/extensions.json
+src/frontend/finance-tracker-ui/.idea/
+src/frontend/finance-tracker-ui/.DS_Store
+src/frontend/finance-tracker-ui/*.suo
+src/frontend/finance-tracker-ui/*.ntvs*
+src/frontend/finance-tracker-ui/*.njsproj
+src/frontend/finance-tracker-ui/*.sln
+src/frontend/finance-tracker-ui/*.sw?
+
+**/bin/
+**/obj/
+**/bin/Debug/
+**/bin/Release/
+**/obj/Debug/
+**/obj/Release/
+
+**/*.dll
+**/*.exe
+**/*.pdb
+**/*.deps.json
+**/*.runtimeconfig.json
+**/*.cache
+
+**/TestResults/
+**/coverage/
+
+# Rider/Visual Studio
+.idea/
+.vs/
+*.sln.iml
